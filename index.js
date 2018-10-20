@@ -171,7 +171,7 @@ manager.spawn()
   var warning = "";
 
   if(err.message.includes("401 Unauthorized")) {
-    if(token === "yourtokenhere") {
+    if(token === "process.env.token") {
       warning = "\nIt appears that you have not yet added a token. Please replace \"yourtokenhere\" with a valid token in the config file.";
     }
     else {
